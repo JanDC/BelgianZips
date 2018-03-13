@@ -1,5 +1,5 @@
 {
-  "name": "jan/belgian-zips",
+  "name": "jandc/belgian-zips",
   "description": "Simple lookup class to query data of common Belgian zipcodes",
   "type": "library",
   "license": "ISC",
