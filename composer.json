@@ -1,0 +1,20 @@
+{
+  "name": "jan/belgian-zips",
+  "description": "Simple lookup class to query data of common Belgian zipcodes",
+  "type": "library",
+  "license": "ISC",
+  "authors": [
+    {
+      "name": "Jan Decavele",
+      "email": "jandecavele@gmail.com"
+    }
+  ],
+  "require": {},
+  "repositories": [
+  ],
+  "autoload": {
+    "psr-4": {
+      "BelgianZips\\": "src/BelgianZips/"
+    }
+  }
+}
