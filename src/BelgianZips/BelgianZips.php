@@ -18,12 +18,12 @@ class BelgianZips
      *
      * @return array
      */
-    private function filterZipcode(array $conditions = [])
+    private function filterZipcodes(array $conditions = [])
     {
         return array_filter($this->zipcodes, function (array $instance) use ($conditions) {
 
             foreach ($conditions as $key => $condition) {
-                if ($instance[$key] != $conditions) { // Type jugling
+                if ($instance[$key] != $condition) { // Type jugling
                     return false;
                 }
             }
@@ -38,7 +38,7 @@ class BelgianZips
      */
     public function getZipCodeInformation(string $zipcode)
     {
-        return $this->filterZipcode(['zip' => $zipcode]);
+        return $this->filterZipcodes(['zip' => $zipcode]);
     }
 
     /**
@@ -47,7 +47,7 @@ class BelgianZips
      */
     public function getInformationByCity(string $city)
     {
-        return $this->filterZipcode(['city' => $city]);
+        return $this->filterZipcodes(['city' => $city]);
     }
 
 }
