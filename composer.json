@@ -1,6 +1,7 @@
 {
   "name": "jandc/belgian-zips",
   "description": "Simple lookup class to query data of common Belgian zipcodes",
+  "tags": ["geocode", "belgium", "zipcodes"],
   "type": "library",
   "license": "ISC",
   "authors": [
