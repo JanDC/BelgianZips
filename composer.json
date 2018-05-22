@@ -10,7 +10,9 @@
       "email": "jandecavele@gmail.com"
     }
   ],
-  "require": {},
+  "require": {
+    "doctrine/cache": "^1.7"
+  },
   "repositories": [
   ],
   "autoload": {
