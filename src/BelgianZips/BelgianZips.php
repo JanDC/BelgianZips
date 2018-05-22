@@ -23,7 +23,7 @@ class BelgianZips
         return array_filter($this->zipcodes, function (array $instance) use ($conditions) {
 
             foreach ($conditions as $key => $condition) {
-                if ($instance[$key] != $condition) { // Type jugling
+                if (strtolower($instance[$key]) != strtolower($condition)) { // Type/case juggling
                     return false;
                 }
             }
